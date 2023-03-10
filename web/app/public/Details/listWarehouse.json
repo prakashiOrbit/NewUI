@@ -1,0 +1,41 @@
+{
+  "headCells": [
+    {
+      "headerLabel": "SKU",
+      "dataAttribute": "sku",
+      "control": "link"
+    },
+    {
+      "headerLabel": "Item Name",
+      "dataAttribute": "item"
+    },
+    {
+      "headerLabel": "Supplier Name",
+      "dataAttribute": "supplierName"
+    },
+    {
+      "headerLabel": "Supplier Id",
+      "dataAttribute": "supplierId"
+    }
+  ],
+  "data": [
+    {
+      "sku": "Ap27",
+      "item": "Meat",
+      "supplierName": "Supreme Goods",
+      "supplierId": "IG9588"
+    },
+    {
+      "sku": "Gr27",
+      "item": "Vegetable",
+      "supplierName": "Fuzail Foods ",
+      "supplierId": "UL9588"
+    },
+    {
+      "sku": "Mp27",
+      "item": "Fruit",
+      "supplierName": "Tanish care",
+      "supplierId": "HI0987"
+    }
+  ]
+}

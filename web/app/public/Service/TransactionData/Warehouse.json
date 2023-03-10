@@ -1,0 +1,84 @@
+{
+  "division": {
+    "name": "Warehouse Header",
+    "formelements": {
+      "generalDetails": [
+        {
+          "label": "Quantity Ordered",
+          "id": "ordered",
+          "control": "select",
+          "validation": "number"
+        },
+        {
+          "label": "Quantity Received",
+          "id": "received",
+          "control": "select",
+          "validation": "number"
+        },
+        {
+          "label": "Location",
+          "id": "location",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+
+        {
+          "label": "Stock",
+          "id": "stock",
+          "control": "select",
+          "populateURL": "./Service/PopulateBank.json"
+        },
+        {
+          "label": "Stock Quantity",
+          "id": "quantity",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "label": "Price",
+          "id": "price",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "label": "GST",
+          "id": "gst",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "label": "Re-Order",
+          "id": "reorder",
+          "control": "select",
+          "populateURL": "./Service/PopulateBank.json"
+        },
+        {
+          "label": "Re-Order Quantity",
+          "id": "quantity",
+          "control": "select"
+        },
+        {
+          "label": "Date",
+          "id": "date",
+          "control": "date",
+          "validate": "datetime"
+        }
+      ],
+      "buttons": [
+        {
+          "id": "save",
+          "label": "Save",
+          "control": "button",
+          "validationjs": "validatedata",
+          "submitURL": "CreateWarehouse"
+        },
+        {
+          "id": "cancel",
+          "label": "Cancel",
+          "control": "button",
+          "redirect": "polist"
+        }
+      ]
+    }
+  }
+}

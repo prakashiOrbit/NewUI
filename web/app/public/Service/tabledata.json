@@ -1,0 +1,72 @@
+{
+    "headCells": [
+    {
+      "title": "F Id",
+      "field": "FID",
+      "control": "link"
+    },
+    {
+      "title": "First Name",
+      "field": "firstname"
+    },
+    {
+      "title": "Last Name",
+      "field": "lastname"
+    },
+    {
+      "title": "Address",
+      "field": "address"
+    },
+    {
+      "title": "Aadhar",
+      "field": "aadhar"
+    },
+    {
+      "title": "PAN",
+      "field": "pan"
+    },
+    {
+      "title": "Contact",
+      "field": "contact"
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "firstname": "sahil",
+      "lastname": "lalwani",
+      "address": "bangalorel",
+      "aadhar": "7456874362837856",
+      "pan": "BE6123E",
+      "contact": "3425979825379"
+    },
+    {
+      "id": 2,
+      "firstname": "rakesh",
+      "lastname": "sharma",
+      "address": "trichy",
+      "aadhar": "9956874362837856",
+      "pan": "AP6123E",
+      "contact": "8925979825379"
+    },
+    {
+      "id": 3,
+      "firstname": "krishna",
+      "lastname": "nair",
+      "address": "trichy",
+      "aadhar": "9956874362837856",
+      "pan": "AP6123E",
+      "contact": "89259798"
+    },
+    {
+      "id": 4,
+      "firstname": "ram",
+      "lastname": "ravan",
+      "address": "trichy",
+      "aadhar": "9956874362837856",
+      "pan": "AP6123E",
+      "contact": "892597982"
+    }
+  ],
+  "submitURL": "SearchFarmers"
+}

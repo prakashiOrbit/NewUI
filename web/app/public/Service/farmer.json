@@ -1,0 +1,116 @@
+{
+  "division": {
+    "name": "Farmer Header",
+    "formelements": {
+      "title": "GENERAL DETAILS ",
+      "url":"",
+      "section": 2,
+      "generalDetails": [
+        {
+          "id": "fId",
+          "label": "fId",
+          "control": "textbox",
+          "validation": "alphanumeric",
+          "disabled": true,
+          "hidden":true
+        },
+        {
+          "id": "name",
+          "label": "name",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "phoneNo",
+          "label": "phoneNo",
+          "control": "textbox",
+          "validation": "phone"
+        },
+        {
+          "id": "Aadhar No",
+          "label": "aadharNo",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "label": "panNo",
+          "id": "pan",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        }
+      ],
+      "title2": "ADDRESS DETAILS",
+   
+      "addressDetails": [
+        {
+          "id": "Street Address",
+          "label": "streetAddress",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "City",
+          "label": "city",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "State",
+          "label": "state",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "Pin Code",
+          "label": "pinCode",
+          "control": "textbox",
+          "validate": "number"
+        }
+      ],
+
+      "title1": "PAYMENT DETAILS",
+      "paymentDetails": [
+        {
+          "id": "Payee Name",
+          "label": "payeeName",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "Account Number",
+          "label": "accountNo",
+          "control": "textbox",
+          "validate": "number"
+        },
+        {
+          "id": "IFSC  Code",
+          "label": "ifscCode",
+          "control": "textbox",
+          "validate": "number"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "CreateFarmer"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "/polist"
+      }
+    ],
+    "edittable": [
+      {
+        "id": "abx",
+        "label": "Farmer Data",
+        "dataurl": "/Service/tabledata.json"
+      }
+    ]
+  }
+}

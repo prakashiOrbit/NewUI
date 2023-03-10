@@ -1,0 +1,55 @@
+{
+  "division": {
+    "name": "Truck Header",
+    "formelements": {
+      "title": "CREATE TRUCK AND DRIVER",
+      "generalDetails": [
+        {
+          "label": "licenseNo",
+          "id": "licenseNo",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "registrationDate",
+          "label": "registrationDate",
+          "control": "textbox"
+        },
+        {
+          "id": "VinNo",
+          "label": "VinNo",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "chassisNo",
+          "label": "chassisNo",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+
+        {
+          "id": "regAddress",
+          "label": "regAddress",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "Next",
+        "label": "Next",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "/CreateTruck"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "/truckList"
+      }
+    ]
+  }
+}

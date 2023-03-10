@@ -1,0 +1,35 @@
+{
+  "division": {
+    "name": "Product Header",
+    "formelements": [
+      {
+        "id": "Licence Number",
+        "label": "Licence Number",
+        "control": "textbox",
+        "validation": "alphanumeric"
+      },
+      {
+        "id": "Vin Number",
+        "label": "Vin Number",
+        "control": "textbox",
+        "validation": "alphanumeric",
+        "disabled": true
+      }
+    ],
+    "buttons": [
+      {
+        "id": "search",
+        "label": "Search",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "/SearchTruck"
+      },
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "redirect": "/CreateTruck"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "division": {
+    "name": "PO Header",
+    "formelements": {
+      "title": "CREATE TRUCK AND DRIVER",
+      "generalDetails": [
+        {
+          "label": "License Number",
+          "id": "license",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "registration",
+          "label": "Registration Date",
+          "control": "date"
+        },
+        {
+          "id": "Time",
+          "label": "VIN Number",
+          "control": "textbox",
+          "validate": "time"
+        },
+        {
+          "id": "chassisNo",
+          "label": "Engine/ Chassis Number",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+
+        {
+          "id": "address",
+          "label": "Registered Address",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "Next",
+        "label": "Next",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "/CreateTruck"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "/polist"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "division": {
+    "name": "Collection Center Header",
+    "formelements": {
+      "generalDetails" :[
+      {
+        "id": "centerName",
+        "label": "centerName",
+        "control": "textbox",
+        "validation": "alphanumeric"
+      }
+    ],
+  
+    "buttons": [
+      {
+        "id": "search",
+        "label": "Search",
+        "control": "button",
+        "submitURL": "/SearchCollectionCenter"
+      },
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "validationjs": "validatedata",
+        "redirect": "/CreateCenter"
+      }
+    ]
+  }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "division": {
+    "name": "Customer Header",
+    "formelements": [
+      {
+        "id": "CO Number",
+        "label": "number",
+        "control": "textbox",
+        "validation": "alphanumeric"
+      },
+      {
+        "id": "Customer Name",
+        "label": "name",
+        "control": "textbox",
+        "validation": "alphanumeric",
+        "disabled": true
+      }
+    ],
+    "buttons": [
+      {
+        "id": "search",
+        "label": "Search",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "https://localhost/searchProduct"
+      },
+      {
+        "id": "create",
+        "label": "create",
+        "control": "button",
+        "redirect": "/customer"
+      }
+    ]
+  }
+}

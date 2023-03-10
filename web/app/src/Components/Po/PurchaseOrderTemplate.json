@@ -1,0 +1,95 @@
+{
+  "division": {
+    "name": "PO Header",
+    "formelements": {
+      "title": "CREATE PO TEMPLATE",
+      "url":"",
+      "section": 2,
+      "generalDetails": [
+        {
+          "id": "poId",
+          "label": "poId",
+          "control": "textbox"
+        },
+
+        {
+          "id": "date",
+          "label": "date",
+          "control": "textbox"
+        }
+      ],
+      "title2":"SHIPPING ADDRESS",
+                    
+          "addressDetails": [
+            {
+              "id": "shipToStreet",
+              "label": "shipToStreet",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },            
+            {
+              "id": "shipToCity",
+              "label": "shipToCity",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "shipToState",
+              "label": "shipToState",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "shipToPinCode",
+              "label": "shipToPinCode",
+              "control": "textbox",
+              "validate": "number"
+            }
+          ],
+        
+        "title1":"BILLING ADDRESS",      
+          "paymentDetails": [
+            {
+              "id": "billToStreet",
+              "label": "billToStreet",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            }, 
+            {
+              "id": "billToCity",
+              "label": "billToCity",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "billToState",
+              "label": "billToState",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "billToPinCode",
+              "label": "billToPinCode",
+              "control": "textbox",
+              "validate": "number"
+            }
+          ]
+        },
+      
+    
+    "buttons": [
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "submitURL": "CreatePurchaseOrderTemplate"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "polist"
+      }
+    ]
+  }
+}

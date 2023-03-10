@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutheader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="@color/Green3" />
+
+        <TextView
+            android:id="@+id/htl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/imageMenu"
+            android:maxLines="1"
+            android:layout_marginStart="120dp"
+            android:text="Cart"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutheader"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cart_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cart_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentTop="true">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Price_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_details"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/toatal_price"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/offrtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Total Bill"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/subtotal_card"
+                        android:layout_below="@+id/offrtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Ofr_display"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:hint="Sub Total"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:hint="Rs.250"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Discount_card"
+                        android:layout_below="@+id/subtotal_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Ofr_display"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:hint="Discount"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:text=""
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Delivery_card"
+                        android:layout_below="@+id/Discount_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Ofr_display"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:hint="Delivery Charge"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:text=""
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Total_card"
+                        android:layout_below="@+id/Delivery_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Ofr_display"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:text="Total"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:text="Rs.250"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/Add_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/Price_details"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="62dp"
+                android:background="@drawable/button_back"
+                android:gravity="center"
+                android:text="ADD ADDRESS TO PROCEED"
+                android:textColor="#ffffff"
+                app:backgroundTint="@color/Green4"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+{
+  "headCells": [
+    {
+      "headerLabel": "PO Id",
+      "dataAttribute": "poid",
+      "control": "link"
+    },
+    {
+      "headerLabel": "Created Date",
+      "dataAttribute": "date"
+    },
+    {
+      "headerLabel": "Invoice Address",
+      "dataAttribute": "address"
+    },
+    {
+      "headerLabel": "Phone Number",
+      "dataAttribute": "contact"
+    },
+    {
+      "headerLabel": "Origin",
+      "dataAttribute": "origin"
+    },
+    {
+      "headerLabel": "Destination",
+      "dataAttribute": "destination"
+    }
+  ],
+  "data": [
+    {
+      "poid": 1,
+      "date": "2022-11-02",
+      "address": "Vellor goods,near kovil road,nammakal",
+      "contact": "7456874356",
+      "origin": "Karnataka",
+      "destination": "Tamilnadu"
+    },
+    {
+      "poid": 2,
+      "date": "2022-11-02",
+      "address": "Vellor goods,near kovil road,nammakal",
+      "contact": "7456874356",
+      "origin": "Karnataka",
+      "destination": "Tamilnadu"
+    },
+    {
+      "poid": 3,
+      "date": "2022-11-02",
+      "address": "Vellor goods,near kovil road,nammakal",
+      "contact": "7456874356",
+      "origin": "Karnataka",
+      "destination": "Tamilnadu"
+    },
+    {
+      "poid": 4,
+      "date": "2022-11-02",
+      "address": "Vellor goods,near kovil road,nammakal",
+      "contact": "7456874356",
+      "origin": "Karnataka",
+      "destination": "Tamilnadu"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "division": {
+    "name": "Farmer Header",
+    "formelements": {
+      "title": "GENERAL DETAILS ",
+      "generalDetails": [
+        {
+          "id": "fId",
+          "label": "fId",
+          "control": "textbox",
+          "validation": "alphanumeric",
+          "disabled": true
+        },
+        {
+          "id": "name",
+          "label": "name",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "phoneNo",
+          "label": "phoneNo",
+          "control": "textbox",
+          "validation": "phone"
+        },
+        {
+          "id": "Aadhar No",
+          "label": "aadharNo",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "panNo",
+          "id": "pan",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        }
+      ],
+      "title2": "ADDRESS DETAILS",
+      "addressDetails": [
+        {
+          "id": "Street Address",
+          "label": "streetAddress",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "City",
+          "label": "city",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "State",
+          "label": "state",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "Pin Code",
+          "label": "pinCode",
+          "control": "textbox",
+          "validation": "number"
+        }
+      ],
+
+      "title1": "PAYMENT DETAILS",
+      "paymentDetails": [
+        {
+          "id": "Payee Name",
+          "label": "payeeName",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "id": "Account Number",
+          "label": "accountNo",
+          "control": "textbox",
+          "validation": "number"
+        },
+        {
+          "id": "IFSC  Code",
+          "label": "ifscCode",
+          "control": "textbox",
+          "validation": "number"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "add",
+        "label": "Add",
+        "control": "button",
+        "submitURL": "/farmerList"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "/farmerList"
+      }
+    ]
+  }
+}

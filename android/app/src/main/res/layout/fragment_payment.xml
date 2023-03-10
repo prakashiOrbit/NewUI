@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:id="@+id/layoutheader"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="@color/Green3" />
+
+        <TextView
+            android:id="@+id/htl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/imageMenu"
+            android:maxLines="1"
+            android:layout_marginStart="120dp"
+            android:text="Payment"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/saved_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select the payment mode"
+        android:gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/layoutheader"
+        android:textSize="24sp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/head1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/saved_payment">
+
+
+        <RelativeLayout
+            android:id="@+id/head2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/saved_payment">
+
+
+            <ImageView
+                android:id="@+id/gpay_img"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/googlepay">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/gpay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/gpay_img"
+                android:text="Google Pay"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/gpay_txt"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp">
+
+            </RadioButton>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/head3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/head2">
+
+
+            <ImageView
+                android:id="@+id/ppay_img"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/pho">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/ppay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ppay_img"
+                android:text="Phone Pay"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ppay_txt"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp">
+
+            </RadioButton>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/head4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/head3">
+
+
+            <ImageView
+                android:id="@+id/ptpay_img"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/paytm">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/ptpay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ptpay_img"
+                android:text="Paytm Pay"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ptpay_txt"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp">
+
+            </RadioButton>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/head5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/head4">
+
+
+            <ImageView
+                android:id="@+id/Upipay_img"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/upi">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/upipay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/Upipay_img"
+                android:text="UPI "
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+            <RadioButton
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/upipay_txt"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="100dp">
+
+            </RadioButton>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quizcard1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/head1"
+        android:elevation="2dp"
+        app:cardCornerRadius="10dp"
+        android:background="@drawable/slide_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <LinearLayout
+            android:id="@+id/C"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/slide_background">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/Home_no_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Apply Coupon"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/head6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/quizcard1"
+        android:layout_marginEnd="10dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/quizcard2"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/C"
+            android:elevation="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/text_backgrnd">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/creditcard"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/Home_no_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Credit and Debit card"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Home_no_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:hint="Visa,master card,rupay and More"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/quizcard3"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_below="@id/quizcard2"
+            android:elevation="2dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_back"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@drawable/text_backgrnd">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bank"
+                    >
+
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/Home_no_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Net Banking"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/Home_no_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:hint="Pay through your bank"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/pay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/head6"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="25dp"
+        android:text="Rs.76"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/pay_mn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:layout_below="@id/pay_name"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:text="View Bill"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pay_ment"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/head6"
+        android:layout_marginEnd="20dp"
+        android:ellipsize="end"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:backgroundTint="@color/Green4"
+        android:text="pay"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutheader0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/layoutheader1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                app:tint="@color/Green4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginEnd="55dp"
+                android:layout_toRightOf="@+id/imageMenu"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Enter Address Details"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/hed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutheader1"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/Address_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutheader"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/address_detailscard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@id/layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/Recipent_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Recipient Name *"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Recipent_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/offrtxt"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/Recipent_Textname"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:imeOptions="actionNext"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="normal" />
+
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/house_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Apartment/Building Name *"
+
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/house_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/offrtxt"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/house_Textname"
+
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:imeOptions="actionNext"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="normal" />
+
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout3"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/street_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Street,city,etc..*"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/street_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/offrtxt"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/Street_textname"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:imeOptions="actionNext"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="normal" />
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/Street_recycler"
+                                    android:layout_below="@id/Street_textname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/layout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout4"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/landmark_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Landmark/Area Name *"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/Recipent_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/offrtxt"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/Landmark_Textname"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="10dp"
+                                    android:imeOptions="actionNext"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:textStyle="normal" />
+
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/landmark_recycler"
+                                    android:layout_below="@id/Landmark_Textname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/addresstype_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Select_addresstype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Add Address Label *"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/radiogroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/Select_addresstype"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/home_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:width="80dp"
+                                android:background="@drawable/radio_selector"
+                                android:button="@android:color/transparent"
+                                android:elevation="4dp"
+                                android:padding="5dp"
+                                android:text="@string/Home"
+                                android:textAlignment="center"
+                                android:textColor="@drawable/text_color"></RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/Others_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:width="80dp"
+                                android:background="@drawable/radio_selector"
+                                android:button="@android:color/transparent"
+                                android:elevation="4dp"
+                                android:padding="5dp"
+                                android:text="@string/Other"
+                                android:textAlignment="center"
+                                android:textColor="@drawable/text_color"></RadioButton>
+                        </RadioGroup>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/radiogroup"
+                            android:visibility="gone"></EditText>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/Address_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/hed1"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/map"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/save_address"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/layout3"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_back"
+                android:text="Confirm &amp; Continue"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/Green4" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

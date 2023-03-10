@@ -1,0 +1,41 @@
+{
+  "headCells": [
+    {
+      "headerLabel": "License Number",
+      "dataAttribute": "license",
+      "control": "link"
+    },
+    {
+      "headerLabel": "Registration Date",
+      "dataAttribute": "date"
+    },
+    {
+      "headerLabel": "VIN Number",
+      "dataAttribute": "vin"
+    },
+    {
+      "headerLabel": "Chassis Number",
+      "dataAttribute": "chassis"
+    },
+    {
+      "headerLabel": "Registered Address",
+      "dataAttribute": "address"
+    }
+  ],
+  "data": [
+    {
+      "license": "BE73882",
+      "date": "13 JAN",
+      "vin": "7247198494",
+      "chassis": "0AV5J7",
+      "address": "Nagarcoil"
+    },
+    {
+      "license": "AP73882",
+      "date": "21 SEPT",
+      "vin": "4347198494",
+      "chassis": "9RV5J7",
+      "address": "Banagalore"
+    }
+  ]
+}

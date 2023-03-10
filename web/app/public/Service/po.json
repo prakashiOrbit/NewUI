@@ -1,0 +1,102 @@
+{
+  "division": {
+    "name": "PO Header",
+    "formelements": {
+      "title": "CREATE PO TEMPLATE",
+      "url":"",
+      "section": 2,
+      "generalDetails": [
+        {
+          "id": "poId",
+          "label": "poid",
+          "control": "textbox"
+        },
+
+        {
+          "id": "date",
+          "label": "date",
+          "control": "date"
+        }
+      ],
+      "title2":"SHIPPING ADDRESS",
+                    
+          "addressDetails": [
+            {
+              "id": "shipToStreet",
+              "label": "shipToStreet",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },            
+            {
+              "id": "shipToCity",
+              "label": "city",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "shipToState",
+              "label": "state",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "shipToPinCode",
+              "label": "shipToPinCode",
+              "control": "textbox",
+              "validate": "number"
+            }
+          ],
+        
+        "title1":"BILLING ADDRESS",      
+          "addressDetails1": [
+            {
+              "id": "billToStreet",
+              "label": "billToStreet",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            }, 
+            {
+              "id": "billToCity",
+              "label": "city",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "billToState",
+              "label": "billToState",
+              "control": "textbox",
+              "validate": "alphanumeric"
+            },
+            {
+              "id": "billToPinCode",
+              "label": "pin",
+              "control": "textbox",
+              "validate": "number"
+            }
+          ]
+        },
+      
+    
+    "buttons": [
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "submitURL": "CreatePurchaseOrderTemplate"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "polist"
+      }
+    ],
+    "edittable": [
+      {
+        "id": "abx",
+        "label": "PO Template Data",
+        "dataurl": "/Service/poTableData.json"
+      }
+    ]
+  }
+}

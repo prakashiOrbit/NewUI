@@ -1,0 +1,56 @@
+{
+    "headCells": [
+    {
+      "title": "S.No",
+      "field": "id",
+      "control": "link"
+    },
+    {
+      "title": "Item Name",
+      "field": "itemname"
+    },
+    {
+      "title": "Item Code",
+      "field": "itemcode"
+    },
+    {
+      "title": "Quantity",
+      "field": "quantity"
+    },
+    {
+      "title": "Basic Price",
+      "field": "price"
+    }
+  ],
+  "data": [
+    {
+      "id": 1,
+      "itemname": "sahil",
+      "itemcode": "lalwani",
+      "quantity": "bangalorel",
+      "price": "7456874362837856"      
+    },
+    {
+      "id": 2,
+      "itemname": "sahil",
+      "itemcode": "lalwani",
+      "quantity": "bangalorel",
+      "price": "7456874362837856"
+    },
+    {
+      "id": 3,
+      "itemname": "sahil",
+      "itemcode": "lalwani",
+      "quantity": "bangalorel",
+      "price": "7456874362837856"
+    },
+    {
+      "id": 4,
+      "itemname": "sahil",
+      "itemcode": "lalwani",
+      "quantity": "bangalorel",
+      "price": "7456874362837856"
+    }
+  ],
+  "submitURL": "SearchFarmers"
+}

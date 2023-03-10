@@ -1,0 +1,46 @@
+{
+  "division": {
+    "name": "Product Header",
+    "formelements": [
+      {
+        "label": "Item Price",
+        "id": "price",
+        "control": "textbox",
+        "validation": "alphanumeric"
+      },
+      {
+        "label": "Item Discount",
+        "id": "discount",
+        "control": "textbox",
+        "validate": "alphanumeric"
+      },
+      {
+        "label": "Item Location",
+        "id": "location",
+        "control": "select",
+        "populateURL": "./Service/PopulateBank.json"
+      },
+      {
+        "label": "supplier",
+        "id": "Item Supplier",
+        "control": "textbox",
+        "validate": "alphanumeric"
+      }
+    ],
+    "buttons": [
+      {
+        "id": "save",
+        "label": "Save",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "http://localhost:9082/SmartOwner/AdminSmartFlow/EnableFlow"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "polist"
+      }
+    ]
+  }
+}

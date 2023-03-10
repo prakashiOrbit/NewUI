@@ -1,0 +1,70 @@
+{
+  "division": {
+    "name": "Truck Header",
+    "formelements": [
+      {
+        "label": "Current Date",
+        "id": "date",
+        "control": "date",
+        "validation": "datetime"
+      },
+      {
+        "label": "Depart Location",
+        "id": "location",
+        "control": "textbox",
+        "validate": "alphanumeric"
+      },
+      {
+        "label": "Depart Time",
+        "id": "time",
+        "control": "textbox",
+        "validate": "time"
+      },
+      {
+        "label": "Destination",
+        "id": "location",
+        "control": "textbox",
+        "validate": "alphanumeric"
+      },
+      {
+        "label": "Arrival Time",
+        "id": "time",
+        "control": "textbox",
+        "validate": "time"
+      },
+      {
+        "label": "Driver Name",
+        "id": "name",
+        "control": "textbox",
+        "validate": "alphanumeric"
+      },
+      {
+        "label": "Order Number",
+        "id": "order",
+        "control": "textbox",
+        "validate": "alphanumeric"
+      },
+      {
+        "label": "PickUp Date",
+        "id": "pickup",
+        "control": "select",
+        "validate": "datetime"
+      }
+    ],
+    "buttons": [
+      {
+        "id": "save",
+        "label": "Save",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "http://localhost:9082/SmartOwner/AdminSmartFlow/EnableFlow"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "polist"
+      }
+    ]
+  }
+}

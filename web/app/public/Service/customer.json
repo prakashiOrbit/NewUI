@@ -1,0 +1,62 @@
+{
+  "division": {
+    "name": "Customer Header",
+    "formelements": {
+      "title": "CREATE CUSTOMER ORDER",
+      "generalDetails": [
+        {
+          "id": "co",
+          "label": "CO Number",
+          "control": "textbox",
+          "validation": "alphanumeric",
+          "disabled": true
+        },
+        {
+          "id": "name",
+          "label": "Customer Name",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "ordervalue",
+          "label": "Order Value",
+          "control": "textbox"
+        },
+
+        {
+          "id": "status",
+          "label": "Status",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "action",
+          "label": "Action",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        },
+        {
+          "id": "warehouse",
+          "label": "Warehouse",
+          "control": "textbox",
+          "validate": "alphanumeric"
+        }
+      ],
+      "buttons": [
+        {
+          "id": "create",
+          "label": "Create",
+          "control": "button",
+          "validationjs": "validatedata",
+          "submitURL": "CreateCustomer"
+        },
+        {
+          "id": "cancel",
+          "label": "Cancel",
+          "control": "button",
+          "redirect": "polist"
+        }
+      ]
+    }
+  }
+}

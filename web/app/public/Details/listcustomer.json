@@ -1,0 +1,64 @@
+{
+  "headCells": [
+    {
+      "headerLabel": "CO Number",
+      "dataAttribute": "co",
+      "control": "link"
+    },
+    {
+      "headerLabel": "Customer Name",
+      "dataAttribute": "customername"
+    },
+    {
+      "headerLabel": "Order Value",
+      "dataAttribute": "ordervalue"
+    },
+    {
+      "headerLabel": "Status",
+      "dataAttribute": "status"
+    },
+    {
+      "headerLabel": "Action",
+      "dataAttribute": "action"
+    },
+    {
+      "headerLabel": "Warehouse",
+      "dataAttribute": "warehouse"
+    }
+  ],
+
+  "data": [
+    {
+      "co": 1,
+      "customername": "Pankaj",
+      "ordervalue": "5",
+      "status": "Available",
+      "action": "Y",
+      "warehouse": "Bangalore"
+    },
+    {
+      "co": 2,
+      "customername": "Pankaj",
+      "ordervalue": "1",
+      "status": "Available",
+      "action": "Y",
+      "warehouse": "Kerala"
+    },
+    {
+      "co": 3,
+      "customername": "Pankaj",
+      "ordervalue": "5",
+      "status": "NotAvailable",
+      "action": "N",
+      "warehouse": "Kochi"
+    },
+    {
+      "co": 4,
+      "customername": "Swati",
+      "ordervalue": "10",
+      "status": "Available",
+      "action": "Y",
+      "warehouse": "Trichy"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "headCells": [
+    {
+      "headerLabel": "Center Name",
+      "dataAttribute": "name",
+      "control": "link"
+    },
+    {
+      "headerLabel": "Center Address",
+      "dataAttribute": "address"
+    },
+    {
+      "headerLabel": "Contact",
+      "dataAttribute": "contact"
+    }
+  ],
+  "data": [
+    
+  ]
+}

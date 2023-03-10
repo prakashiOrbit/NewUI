@@ -1,0 +1,30 @@
+{
+    "division": {
+        "name": "PO Header",
+        "formelements": [
+            {
+                "id": "farmer",
+                "label": "Farmer",
+                "control": "textbox",
+                "validation": "alphanumeric",
+                "disabled": true
+            }
+           
+        ],
+        "buttons": [
+            {
+                "id": "search",
+                "label": "Search",
+                "control": "button",
+                "validationjs": "validatedata",
+                "submitURL": "SearchFarmers"
+            },
+            {
+                "id": "onboard",
+                "label": "onboard",
+                "control": "button",
+                "redirect": "/farmer"
+            }
+        ]
+    }
+}

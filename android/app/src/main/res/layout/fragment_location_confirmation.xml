@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.Fragment.Location_confirmationFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutheader1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/baseline_arrow_back_ios_24"
+            app:tint="@color/Green4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/imageMenu"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Location Information"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search_linear"
+        android:layout_below="@id/layoutheader1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/blue_border_rounded_cornwe">
+
+        <TextView
+            android:id="@+id/search_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Search"
+            android:imeOptions="actionSearch"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/search_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/map">
+
+</ImageView>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+   android:layout_marginEnd="40dp"
+    android:layout_marginBottom="30dp"
+    android:layout_marginStart="40dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@android:color/white"
+    android:layout_alignParentBottom="true"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    >
+
+
+
+
+
+    <TextView
+
+        android:id="@+id/textadd_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+<TextView
+android:id="@+id/textadd_2"
+    android:layout_below="@id/textadd_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:textSize="18sp"
+    android:textColor="@color/black"
+    android:gravity="center_horizontal"
+    android:layout_marginEnd="30dp">
+
+</TextView>
+
+    <TextView
+        android:id="@+id/textadd_3"
+        android:layout_below="@id/textadd_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="30dp">
+
+    </TextView>
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/confirm_address"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/textadd_3"
+        android:background="@drawable/button_back"
+        android:text="Confirm &amp;Continue"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:layout_marginTop="1dp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/Green4" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+

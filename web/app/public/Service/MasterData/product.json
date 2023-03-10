@@ -1,0 +1,54 @@
+{
+  "division": {
+    "name": "Product Header",
+    "formelements": {
+      "title": "CREATE NEW PRODUCT",
+      "generalDetails": [
+        {
+          "label": "sku",
+          "id": "SKU",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "item",
+          "id": "Item Name",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "Item Category",
+          "id": "category",
+          "control": "select",
+          "populateURL": "./Service/PopulateBank.json"
+        },
+        {
+          "label": "Item Subcategory",
+          "id": "subcategory",
+          "control": "select",
+          "populateURL": "./Service/PopulateBank.json"
+        },
+        {
+          "label": "price",
+          "id": "Base Price",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "Next",
+        "label": "Next",
+        "control": "button",
+        "submitURL": "CreateProduct"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "polist"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+  .my-form .my-textfield {
+    display: block;
+    margin-top: 10px;
+  }
+  .my-form .my-textfield .MuiFormControl-root {
+    width: 100%;
+  }
+  .my-form .my-textfield label {
+    display: block;
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "division": {
+    "name": "Warehouse Header",
+    "formelements": {
+      "title": "CREATE WAREHOUSE",
+      "generalDetails": [
+        {
+          "label": "address",
+          "id": "Warehouse Address",
+          "isMultiline": true,
+          "rows": 6,
+          "control": "textbox"
+        },
+        {
+          "label": "capacity",
+          "id": "capacity",
+          "isMultiline": true,
+          "rows": 6,
+          "control": "textbox"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "Next",
+        "label": "Next",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "/CreateWarehouse"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "/"
+      }
+    ]
+  }
+}

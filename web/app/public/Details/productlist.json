@@ -1,0 +1,39 @@
+{
+  "headCells": [
+    {
+      "headerLabel": "Item Name",
+      "dataAttribute": "name",
+      "control": "link"
+    },
+    {
+      "headerLabel": "Category",
+      "dataAttribute": "category"
+    },
+    {
+      "headerLabel": "Subcategory",
+      "dataAttribute": "subcategory"
+    },
+    {
+      "headerLabel": "Description",
+      "dataAttribute": "description"
+    },
+    {
+      "headerLabel": "Supplier",
+      "dataAttribute": "supplier"
+    },
+    {
+      "headerLabel": "Size",
+      "dataAttribute": "size"
+    }
+  ],
+  "data": [
+    {
+      "name": "Carrot",
+      "category": "Vegetable",
+      "subcategory": "Salad",
+      "description": "Used to cook Halwa and Salad",
+      "supplier": "Satish Enterprises",
+      "size": "10"
+    }
+  ]
+}

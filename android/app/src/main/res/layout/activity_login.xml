@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bag"
+    tools:context=".Ui.Activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        >
+    </ImageView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/back"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/text_backgrnd"
+        app:cardCornerRadius="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/white"
+
+            >
+
+
+
+
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.FadingCircle"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/pincode"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-60dp"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/Green4" />
+
+            <ImageView
+                android:id="@+id/logo_image2"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo">
+
+            </ImageView>
+
+            <TextView
+
+                android:id="@+id/log_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo_image2"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="Login with mobile number"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txt_input"
+                android:layout_below="@+id/log_text1"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:endIconMode="clear_text"
+
+                app:endIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:startIconTint="@color/Green2">
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phonenumber_"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/log"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_below="@id/txt_input"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="62dp"
+                android:background="@drawable/text_backgrnd"
+                android:gravity="center"
+                android:text="continue"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                app:backgroundTint="@color/Green4" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+

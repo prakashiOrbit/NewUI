@@ -1,0 +1,36 @@
+{
+  "division": {
+    "name": "Warehouse Header",
+    "formelements": [
+      {
+        "id": "SKU",
+        "label": "SKU",
+        "control": "textbox",
+        "validation": "alphanumeric"
+      },
+      {
+        "id": "Supplier Id",
+        "label": "Supplier Id",
+        "control": "textbox",
+        "validation": "alphanumeric",
+        "disabled": true
+      }
+    ],
+    "buttons": [
+      {
+        "id": "search",
+        "label": "Search",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "SearchWarehouse"
+      },
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "validationjs": "validatedata",
+        "redirect": "/CreateWarehouse"
+      }
+    ]
+  }
+}

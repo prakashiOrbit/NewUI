@@ -1,0 +1,29 @@
+{
+  "division": {
+    "name": "Product Header",
+    "formelements": [
+      {
+        "id": "Item Name",
+        "label": "Item Name",
+        "control": "textbox",
+        "validation": "alphanumeric",
+        "disabled": true
+      }
+    ],
+    "buttons": [
+      {
+        "id": "search",
+        "label": "Search",
+        "control": "button",
+        "validationjs": "validatedata",
+        "submitURL": "SearchProduct"
+      },
+      {
+        "id": "create",
+        "label": "Create",
+        "control": "button",
+        "redirect": "/CreateProduct"
+      }
+    ]
+  }
+}

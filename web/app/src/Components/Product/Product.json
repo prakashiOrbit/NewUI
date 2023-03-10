@@ -1,0 +1,54 @@
+{
+  "division": {
+    "name": "Product Header",
+    "formelements": {
+      "title": "CREATE NEW PRODUCT",
+      "generalDetails": [
+        {
+          "label": "skuId",
+          "id": "skuId",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "itemName",
+          "id": "itemName",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "itemCategory",
+          "id": "itemCategory",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "itemSubcategory",
+          "id": "itemSubcategory",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "basePrice",
+          "id": "basePrice",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "id": "add",
+        "label": "Add",
+        "control": "button",
+        "submitURL": "CreateProduct"
+      },
+      {
+        "id": "cancel",
+        "label": "Cancel",
+        "control": "button",
+        "redirect": "polist"
+      }
+    ]
+  }
+}

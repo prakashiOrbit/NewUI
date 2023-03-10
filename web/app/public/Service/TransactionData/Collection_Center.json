@@ -1,0 +1,42 @@
+{
+  "division": {
+    "name": "Collection Header",
+    "formelements": {
+      "generalDetails": [
+        {
+          "label": "Incharge Name",
+          "id": "name",
+          "control": "textbox",
+          "validation": "alphanumeric"
+        },
+        {
+          "label": "Accepted Items",
+          "id": "items",
+          "control": "select",
+          "populateURL": "./Service/PopulateBank.json"
+        },
+        {
+          "label": "Rejected Items",
+          "id": "rejected",
+          "control": "select",
+          "populateURL": "./Service/PopulateBank.json"
+        }
+      ],
+      "buttons": [
+        {
+          "id": "save",
+          "label": "Save",
+          "control": "button",
+          "validationjs": "validatedata",
+          "submitURL": "http://localhost:9082/SmartOwner/AdminSmartFlow/EnableFlow"
+        },
+        {
+          "id": "cancel",
+          "label": "Cancel",
+          "control": "button",
+          "redirect": "polist"
+        }
+      ]
+    }
+  }
+}

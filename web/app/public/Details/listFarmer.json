@@ -1,0 +1,55 @@
+{
+  "headCells": [
+    {
+      "headerLabel": "S.No",
+      "dataAttribute": "sno",
+      "control": "link"
+    },
+    {
+      "headerLabel": "FID",
+      "dataAttribute": "fid"
+    },
+    {
+      "headerLabel": "Name",
+      "dataAttribute": "name"
+    },
+    {
+      "headerLabel": "Phone No.",
+      "dataAttribute": "phone"
+    },
+    {
+      "headerLabel": "City/Village",
+      "dataAttribute": "address"
+    },
+    {
+      "headerLabel": "CC Name",
+      "dataAttribute": "cc"
+    }
+  ],
+  "data": [
+    {
+      "sno": 1,
+      "fid": "101",
+      "name": "Kishor Sahu",
+      "phone": "7456874363",
+      "address": "Bangalore",
+      "cc": "Hubli"
+    },
+    {
+      "sno": 2,
+      "fid": "202",
+      "name": "Manikchand",
+      "phone": "8456874354",
+      "address": "Kerala",
+      "cc": "Kochin"
+    },
+    {
+      "sno": 3,
+      "fid": "511",
+      "name": "Mansi",
+      "phone": "9743628378",
+      "address": "Bangalore",
+      "cc": "Marathahalli"
+    }
+  ]
+}
